@@ -1,6 +1,6 @@
 import { Example } from '../build'
-import { B, Global } from 'vendee'
-import { namedKeys } from 'vendee-keys'
+import { B, Global } from 'vasku'
+import { namedKeys } from 'vasku-keys'
 
 async function main (): Promise<void> {
   const keys = await namedKeys('example')

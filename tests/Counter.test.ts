@@ -1,6 +1,6 @@
 import { assert } from 'chai'
 import { Example } from '../build'
-import { B, createTransferPayload, generateRandomKeyPair, SafeMultisigWallet, x0 } from 'vendee'
+import { B, createTransferPayload, generateRandomKeyPair, SafeMultisigWallet, x0 } from 'vasku'
 
 const INITIAL_VALUE = 10
 

@@ -1,15 +1,15 @@
-# Vendee contract example
+# Vasku contract example
 
-![npm version](https://img.shields.io/npm/v/vendee-example?label=npm)
-![npm downloads](https://img.shields.io/npm/dt/vendee-example?label=downloads)
+![npm version](https://img.shields.io/npm/v/vasku-example?label=npm)
+![npm downloads](https://img.shields.io/npm/dt/vasku-example?label=downloads)
 
 ## How to use
 
 ```typescript
 import { TonClient } from '@eversdk/core'
 import { libWeb } from '@eversdk/lib-web'
-import { Global } from 'vendee'
-import { Example } from 'vendee-example'
+import { Global } from 'vasku'
+import { Example } from 'vasku-example'
 
 const endpoints = ['https://gql-devnet.venom.network']
 const address = '0:0d01f835c90fed8f59ff2ecfd18c56caa88d9d1fec90146adfd182e0bf88d25d'
@@ -45,7 +45,7 @@ view on [devnet.venomscan.com](https://devnet.venomscan.com/accounts/0:0d01f835c
 ## How to build
 
 ```shell
-npx vendee compile
+npx vasku compile
 ```
 
 ## How to publish npm package

@@ -1,4 +1,4 @@
-import { Config } from 'vendee'
+import { Config } from 'vasku'
 import * as dotenv from 'dotenv'
 
 dotenv.config()

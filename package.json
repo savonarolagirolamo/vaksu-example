@@ -1,7 +1,7 @@
 {
-  "name": "vendee-example",
-  "version": "0.0.2",
-  "description": "Vendee contract example",
+  "name": "vasku-example",
+  "version": "0.0.1",
+  "description": "Vasku contract example",
   "author": "@kokkekpek",
   "license": "MIT",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
     "yarn.lock"
   ],
   "keywords": [
-    "Vendee",
+    "Vasku",
     "Venom",
     "Everscale",
     "TON",
@@ -32,7 +32,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "vendee": "^1.1.1"
+    "vasku": "^0.0.1"
   },
   "devDependencies": {
     "@types/chai": "^4.3.5",
@@ -45,6 +45,6 @@
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4",
-    "vendee-keys": "^1.0.1"
+    "vasku-keys": "^0.0.1"
   }
 }
