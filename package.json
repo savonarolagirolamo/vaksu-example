@@ -1,6 +1,6 @@
 {
   "name": "vendee-example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vendee contract example",
   "author": "@kokkekpek",
   "license": "MIT",
@@ -32,8 +32,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "mocha": "^10.2.0",
-    "vendee": "^1.0.19"
+    "vendee": "^1.1.1"
   },
   "devDependencies": {
     "@types/chai": "^4.3.5",
@@ -42,8 +41,10 @@
     "chai": "^4.3.7",
     "cpy-cli": "^4.2.0",
     "dotenv": "^16.0.3",
+    "mocha": "^10.2.0",
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vendee-keys": "^1.0.1"
   }
 }

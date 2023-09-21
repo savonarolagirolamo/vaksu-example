@@ -1,9 +1,12 @@
 import { Example } from '../build'
-import { B, Global, namedKeys } from 'vendee'
+import { B, Global } from 'vendee'
+import { namedKeys } from 'vendee-keys'
 
 async function main (): Promise<void> {
-  await (new Example( { keys: await namedKeys('example')}))
-    .deploy(0.1 * B, { number: 0 })
+  const keys = await namedKeys('example')
+  const example = new Example( { keys })
+  await example.deploy(0.1 * B, { number: 0 })
+  console.log(`Address: ${await example.address()}`)
   Global.client?.close()
 }
 

@@ -1,8 +1,10 @@
 import { Example } from '../build'
-import { AccountType, Global, namedKeys } from 'vendee'
+import { AccountType, Global } from 'vendee'
+import { namedKeys } from 'vendee-keys'
 
 async function main (): Promise<void> {
-  const example = new Example( { keys: await namedKeys('example')})
+  const keys = await namedKeys('example')
+  const example = new Example( { keys })
   console.log(`Address: ${await example.address()}`)
   console.log(`Account type: ${await example.accountType()}`)
   console.log(`Balance: ${await example.balance()}`)
