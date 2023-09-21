@@ -2,7 +2,7 @@
   "name": "vasku-example",
   "version": "0.0.1",
   "description": "Vasku contract example",
-  "author": "@kokkekpek",
+  "author": "@savonarolagirolamo",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
