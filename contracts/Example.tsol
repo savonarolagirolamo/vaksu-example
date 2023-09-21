@@ -1,0 +1,31 @@
+pragma ever-solidity >= 0.68.0;
+
+contract Example {
+    ///////////////
+    // Variables //
+    ///////////////
+    uint256 private _count;
+
+    /////////////////
+    // Constructor //
+    /////////////////
+    constructor(uint8 number) {
+        tvm.accept();
+        _count = number;
+    }
+
+    ////////////
+    // Getter //
+    ////////////
+    function getCount() public view returns (uint256 count) {
+        return _count;
+    }
+
+    /////////////
+    // Receive //
+    /////////////
+    receive() external {
+        ++_count;
+    }
+}
+

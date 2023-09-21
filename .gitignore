@@ -1,0 +1,16 @@
+node_modules
+
+# Contract keys
+keys
+
+# Last build information
+cache
+
+# Compiled TypeScript files from build directory
+dist
+
+# URL to endpoins and other private settings
+.env
+
+# Logs
+*.log

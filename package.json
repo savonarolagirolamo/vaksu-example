@@ -1,0 +1,49 @@
+{
+  "name": "vendee-example",
+  "version": "0.0.1",
+  "description": "Vendee contract example",
+  "author": "@kokkekpek",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "build/",
+    "dist/",
+    "contracts/",
+    "LICENSE",
+    "package.json",
+    "README.md",
+    "tsconfig.json",
+    "yarn.lock"
+  ],
+  "keywords": [
+    "Vendee",
+    "Venom",
+    "Everscale",
+    "TON",
+    "Blockchain",
+    "Smart-contracts",
+    "Contracts",
+    "TypeScript",
+    "Solidity"
+  ],
+  "scripts": {
+    "build": "tsc --build .",
+    "env": "cpy .env.example . --rename .env",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "mocha": "^10.2.0",
+    "vendee": "^1.0.19"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.1.1",
+    "chai": "^4.3.7",
+    "cpy-cli": "^4.2.0",
+    "dotenv": "^16.0.3",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
