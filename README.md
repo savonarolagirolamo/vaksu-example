@@ -3,53 +3,35 @@
 ![npm version](https://img.shields.io/npm/v/vendee-example?label=npm)
 ![npm downloads](https://img.shields.io/npm/dt/vendee-example?label=downloads)
 
-## Contract
+## How to use
 
-### Code
+```typescript
+import { TonClient } from '@eversdk/core'
+import { libWeb } from '@eversdk/lib-web'
+import { Global } from 'vendee'
+import { Example } from 'vendee-example'
 
-```sol
-pragma ever-solidity >= 0.68.0;
+const endpoints = ['https://gql-devnet.venom.network']
+const address = '0:0d01f835c90fed8f59ff2ecfd18c56caa88d9d1fec90146adfd182e0bf88d25d'
 
-contract Example {
-    ///////////////
-    // Variables //
-    ///////////////
-    uint256 private _count;
-
-    /////////////////
-    // Constructor //
-    /////////////////
-    constructor(uint8 number) {
-        tvm.accept();
-        _count = number;
-    }
-
-    ////////////
-    // Getter //
-    ////////////
-    function getCount() public view returns (uint256 count) {
-        return _count;
-    }
-
-    /////////////
-    // Receive //
-    /////////////
-    receive() external {
-        ++_count;
-    }
+async function main (): Promise<void> {
+  TonClient.useBinaryLibrary(libWeb as any)
+  Global.client = new TonClient({ network: { endpoints } })
+  const example = new Example({ address })
+  const count = (await example.run.getCount()).count
 }
+
+main().catch(console.error)
 ```
 
-### Functional
 
-* Add `+1` to `_count` every time then contract receive coins
-* `getCount()` method returns `_count` value
+## Contract
 
-### Address
+### Address 
 
-`0:0d01f835c90fed8f59ff2ecfd18c56caa88d9d1fec90146adfd182e0bf88d25d` 
+`0:0d01f835c90fed8f59ff2ecfd18c56caa88d9d1fec90146adfd182e0bf88d25d`
 
-[view on testnet.venomscan.com](https://testnet.venomscan.com/accounts/0:0d01f835c90fed8f59ff2ecfd18c56caa88d9d1fec90146adfd182e0bf88d25d)
+view on [devnet.venomscan.com](https://devnet.venomscan.com/accounts/0:0d01f835c90fed8f59ff2ecfd18c56caa88d9d1fec90146adfd182e0bf88d25d)
 
 ### Keys
 
@@ -60,13 +42,13 @@ contract Example {
 }
 ```
 
-## How to build contract
+## How to build
 
 ```shell
 npx vendee compile
 ```
 
-## How to publish package
+## How to publish npm package
 
 ```shell
 yarn publish
