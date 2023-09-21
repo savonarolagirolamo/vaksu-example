@@ -3399,17 +3399,17 @@ __metadata:
     ts-mocha: ^10.0.0
     ts-node: ^10.9.1
     typescript: ^5.0.4
-    vasku: ^0.0.1
-    vasku-keys: ^0.0.1
+    vasku: ^0.0.3
+    vasku-keys: ^0.0.2
   languageName: unknown
   linkType: soft
 
-"vasku-keys@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "vasku-keys@npm:0.0.1"
+"vasku-keys@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "vasku-keys@npm:0.0.2"
   dependencies:
     vasku: ^0.0.1
-  checksum: 9e6753c4bffb9cde786fb700eb7211a919ef0efae4f9f8b69b9134c1cc76774a0ab5eb77dbb5ac087a06d8637c3c534d6857c7f1ae006f1b8a8a5c75c98acf05
+  checksum: 18b274198ccc90fe40dcf7de63f8902d82dbf9b358bfdadf4ba993c038be8a8b2bd81bc37d80d4ca75483997b5471d0cd3e885b569c245d5aefbda0385239f4d
   languageName: node
   linkType: hard
 
@@ -3432,6 +3432,28 @@ __metadata:
   bin:
     vasku: build/cli/index.js
   checksum: 092fe40222b9401078980c690dd47e0c92d70b4cf5d7c0d0e81b271019a8403494e54a2cf250426823443b64fad281fe887c510da8d5500a0cf3bfb6dd59aaa2
+  languageName: node
+  linkType: hard
+
+"vasku@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "vasku@npm:0.0.3"
+  dependencies:
+    "@eversdk/core": ^1.43.1
+    "@eversdk/lib-node": ^1.43.1
+    colors: ^1.4.0
+    commander: ^10.0.1
+    enquirer: ^2.3.6
+    everdev: ^1.7.0
+    fs-extra: ^11.1.1
+    glob: ^10.2.6
+    joi: ^17.9.2
+    mocha: ^10.2.0
+    ts-mocha: ^10.0.0
+    typescript: ^5.0.4
+  bin:
+    vasku: build/cli/index.js
+  checksum: 617a455434039014af099587f1d009e08001e3f83a20e3c20928b25d49fc8e7be17d59a753f579cbcf2b6ad3df3c687a4eea226d5e46ad07f01cf601b446236b
   languageName: node
   linkType: hard
 

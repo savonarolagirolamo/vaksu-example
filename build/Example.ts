@@ -1,4 +1,4 @@
-import { type CompiledContractConfig, Contract, type ContractOptions, type ResultOfCall } from 'vendee'
+import { type CompiledContractConfig, Contract, type ContractOptions, type ResultOfCall } from 'vasku'
 import { type KeyPair, type ResultOfProcessMessage } from '@eversdk/core'
 import ExampleContent from './ExampleContent'
 type constructorIn = {
